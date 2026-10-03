@@ -54,6 +54,7 @@ use std::{env, fs, thread};
 use walkdir::{DirEntry, WalkDir};
 use which::which;
 
+pub mod archiver;
 pub mod chrome;
 pub mod config;
 pub mod downloads;
