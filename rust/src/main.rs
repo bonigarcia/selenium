@@ -359,6 +359,7 @@ fn main() {
                 webdriver_url: wd.base_url.clone(),
                 webdriver_ws_url: wd.ws_url.clone(),
                 record_path: None,
+                recorder,
             };
             let mut pipe = PipeMode::new(config);
             let proxy_port = pipe.start()?;
