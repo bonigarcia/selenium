@@ -23,7 +23,9 @@ jobs:
       rerun-with-debug: true
       run: >
         bazel test --flaky_test_attempts 2
+        --test_env=SELENIUM_TRACE_DIR=/tmp/selenium-test-traces
         //java/test/org/openqa/selenium/chrome:ChromeDriverFunctionalTest
+        //java/test/org/openqa/selenium/chrome:ChromeRecordingTest
         //java/test/org/openqa/selenium/federatedcredentialmanagement:FederatedCredentialManagementTest
         //java/test/org/openqa/selenium/firefox:FirefoxDriverBuilderTest
         //java/test/org/openqa/selenium/grid/router:RemoteWebDriverDownloadTest
@@ -46,7 +48,9 @@ jobs:
       rerun-with-debug: true
       run: >
         bazel test --flaky_test_attempts 2
+        --test_env=SELENIUM_TRACE_DIR=/tmp/selenium-test-traces
         //java/test/org/openqa/selenium/chrome:ChromeDriverFunctionalTest-remote
+        //java/test/org/openqa/selenium/chrome:ChromeRecordingTest
         //java/test/org/openqa/selenium/federatedcredentialmanagement:FederatedCredentialManagementTest
         //java/test/org/openqa/selenium/firefox:FirefoxDriverBuilderTest
         //java/test/org/openqa/selenium/grid/router:RemoteWebDriverDownloadTest
