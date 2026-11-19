@@ -1,0 +1,12 @@
+# Selenium trace recording samples
+
+Traces produced by `ChromeRecordingTest` and `FirefoxRecordingTest` on the `feature/trace-recording` branch. Playwright trace format, schema v8.
+
+| Trace | Vibium record player | Playwright trace viewer |
+|---|---|---|
+| `ChromeRecordingTest-bidi-trace.zip` | [open](https://player.vibium.dev/?record=https://raw.githubusercontent.com/bonigarcia/selenium/trace-samples/ChromeRecordingTest-bidi-trace.zip) | [open](https://trace.playwright.dev/?trace=https://raw.githubusercontent.com/bonigarcia/selenium/trace-samples/ChromeRecordingTest-bidi-trace.zip) |
+| `ChromeRecordingTest-classic-trace.zip` | [open](https://player.vibium.dev/?record=https://raw.githubusercontent.com/bonigarcia/selenium/trace-samples/ChromeRecordingTest-classic-trace.zip) | [open](https://trace.playwright.dev/?trace=https://raw.githubusercontent.com/bonigarcia/selenium/trace-samples/ChromeRecordingTest-classic-trace.zip) |
+| `FirefoxRecordingTest-bidi-trace.zip` | [open](https://player.vibium.dev/?record=https://raw.githubusercontent.com/bonigarcia/selenium/trace-samples/FirefoxRecordingTest-bidi-trace.zip) | [open](https://trace.playwright.dev/?trace=https://raw.githubusercontent.com/bonigarcia/selenium/trace-samples/FirefoxRecordingTest-bidi-trace.zip) |
+| `FirefoxRecordingTest-classic-trace.zip` | [open](https://player.vibium.dev/?record=https://raw.githubusercontent.com/bonigarcia/selenium/trace-samples/FirefoxRecordingTest-classic-trace.zip) | [open](https://trace.playwright.dev/?trace=https://raw.githubusercontent.com/bonigarcia/selenium/trace-samples/FirefoxRecordingTest-classic-trace.zip) |
+
+`bidi` traces were recorded through WebDriver BiDi (screenshots, console, network). `classic` traces come from sessions where the binding used BiDi itself, so the recorder fell back to classic WebDriver (screenshots only).
